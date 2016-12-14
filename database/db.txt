@@ -1,0 +1,25 @@
+create table registrations
+(
+rid int primary key identity(1,1),
+firstname varchar(100),
+lastname varchar(100),
+email varchar(100) unique,
+phoneno varchar(30),
+username varchar(100) unique,
+images int,
+imagenames varchar(600),
+imagepoint varchar(50),
+regdate date
+);
+
+/*
+create table graphicpasswords
+(gpid int primary key identity(1,1),
+rid int,
+imagename varchar(200),
+imagepoint int
+);
+*/
+
+
+
